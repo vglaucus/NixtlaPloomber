@@ -1,0 +1,7 @@
+# Auto-generated file, may need manual editing
+neuralforecast
+numpy
+pandas
+ploomber>=0.14.7
+pytorch_lightning
+torch

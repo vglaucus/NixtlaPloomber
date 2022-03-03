@@ -1,0 +1,73 @@
+tasks:
+
+- source: tasks\read-csv.ipynb
+  product:
+    Y_col: output\read-csv-Y_col.pkl
+    df: output\read-csv-df.pkl
+    X_cols: output\read-csv-X_cols.pkl
+    nb: output\read-csv.ipynb
+
+- source: tasks\cleaning-and-converting-into-desired-format.ipynb
+  product:
+    df: output\cleaning-and-converting-into-desired-format-df.pkl
+    column_renamer: output\cleaning-and-converting-into-desired-format-column_renamer.pkl
+    nb: output\cleaning-and-converting-into-desired-format.ipynb
+
+- source: tasks\creating-dataframe-for-y.ipynb
+  product:
+    Y_df: output\creating-dataframe-for-y-Y_df.pkl
+    nb: output\creating-dataframe-for-y.ipynb
+
+- source: tasks\creating-dataframe-for-x.ipynb
+  product:
+    X_df: output\creating-dataframe-for-x-X_df.pkl
+    nb: output\creating-dataframe-for-x.ipynb
+
+- source: tasks\split-test-and-train.ipynb
+  product:
+    Y_df_test: output\split-test-and-train-Y_df_test.pkl
+    output_size: output\split-test-and-train-output_size.pkl
+    X_df_train: output\split-test-and-train-X_df_train.pkl
+    input_size: output\split-test-and-train-input_size.pkl
+    Y_df_train: output\split-test-and-train-Y_df_train.pkl
+    nb: output\split-test-and-train.ipynb
+
+- source: tasks\train.ipynb
+  product:
+    val_mask_df: output\train-val_mask_df.pkl
+    train_mask_df: output\train-train_mask_df.pkl
+    nb: output\train.ipynb
+
+- source: tasks\plot-of-train-test-proportion.ipynb
+  product:
+    nb: output\plot-of-train-test-proportion.ipynb
+
+- source: tasks\converting-into-windowsdataset.ipynb
+  product:
+    train_dataset: output\converting-into-windowsdataset-train_dataset.pkl
+    val_dataset: output\converting-into-windowsdataset-val_dataset.pkl
+    nb: output\converting-into-windowsdataset.ipynb
+
+- source: tasks\converting-into-timeseriesloader.ipynb
+  product:
+    val_loader: output\converting-into-timeseriesloader-val_loader.pkl
+    train_loader: output\converting-into-timeseriesloader-train_loader.pkl
+    nb: output\converting-into-timeseriesloader.ipynb
+
+- source: tasks\instancing-the-model.ipynb
+  product:
+    model: output\instancing-the-model-model.pkl
+    nb: output\instancing-the-model.ipynb
+
+- source: tasks\training-the-model.ipynb
+  product:
+    nb: output\training-the-model.ipynb
+
+- source: tasks\forecasting-using-the-model.ipynb
+  product:
+    Y_df_forecast: output\forecasting-using-the-model-Y_df_forecast.pkl
+    nb: output\forecasting-using-the-model.ipynb
+
+- source: tasks\random-country-plot.ipynb
+  product:
+    nb: output\random-country-plot.ipynb
