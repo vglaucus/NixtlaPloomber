@@ -1,3 +1,10 @@
+# This repo was made as an use case of both Nixtla's Neural Forecast and Ploomber example
+First, Neural Forecast.ipynb was written separately, and then Ploomber's Soorgeon automatically generated everything else using 
+```sh
+soorgeon refactor .\Neural Forecast.ipynb
+```
+This is the last text added to the defaultly generated README made by Soorgeon, so on to what Soorgeon did:
+
 # This pipeline was automatically generated
 
 ## Setup
